@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MathPadServices" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:49362/MathPadServices.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:49362/MathPadServices.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:49362/MathPadServices.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SilverlightMathPad.Web" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMathPadServices_AddEntryToHallOfFame_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddEntryToHallOfFame" />
+  </wsdl:message>
+  <wsdl:message name="IMathPadServices_AddEntryToHallOfFame_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddEntryToHallOfFameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMathPadServices_GetEntriesOfHallOfFame_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntriesOfHallOfFame" />
+  </wsdl:message>
+  <wsdl:message name="IMathPadServices_GetEntriesOfHallOfFame_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntriesOfHallOfFameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMathPadServices_GetEntriesOfScoreBoard_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntriesOfScoreBoard" />
+  </wsdl:message>
+  <wsdl:message name="IMathPadServices_GetEntriesOfScoreBoard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntriesOfScoreBoardResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMathPadServices_GetTopScore_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTopScore" />
+  </wsdl:message>
+  <wsdl:message name="IMathPadServices_GetTopScore_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTopScoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMathPadServices_AddScoreBoard_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddScoreBoard" />
+  </wsdl:message>
+  <wsdl:message name="IMathPadServices_AddScoreBoard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddScoreBoardResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMathPadServices_AddHallofFame_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddHallofFame" />
+  </wsdl:message>
+  <wsdl:message name="IMathPadServices_AddHallofFame_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddHallofFameResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMathPadServices">
+    <wsdl:operation name="AddEntryToHallOfFame">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMathPadServices/AddEntryToHallOfFame" message="tns:IMathPadServices_AddEntryToHallOfFame_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMathPadServices/AddEntryToHallOfFameResponse" message="tns:IMathPadServices_AddEntryToHallOfFame_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEntriesOfHallOfFame">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMathPadServices/GetEntriesOfHallOfFame" message="tns:IMathPadServices_GetEntriesOfHallOfFame_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMathPadServices/GetEntriesOfHallOfFameResponse" message="tns:IMathPadServices_GetEntriesOfHallOfFame_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEntriesOfScoreBoard">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMathPadServices/GetEntriesOfScoreBoard" message="tns:IMathPadServices_GetEntriesOfScoreBoard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMathPadServices/GetEntriesOfScoreBoardResponse" message="tns:IMathPadServices_GetEntriesOfScoreBoard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTopScore">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMathPadServices/GetTopScore" message="tns:IMathPadServices_GetTopScore_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMathPadServices/GetTopScoreResponse" message="tns:IMathPadServices_GetTopScore_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddScoreBoard">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMathPadServices/AddScoreBoard" message="tns:IMathPadServices_AddScoreBoard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMathPadServices/AddScoreBoardResponse" message="tns:IMathPadServices_AddScoreBoard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddHallofFame">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMathPadServices/AddHallofFame" message="tns:IMathPadServices_AddHallofFame_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMathPadServices/AddHallofFameResponse" message="tns:IMathPadServices_AddHallofFame_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMathPadServices" type="tns:IMathPadServices">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddEntryToHallOfFame">
+      <soap:operation soapAction="http://tempuri.org/IMathPadServices/AddEntryToHallOfFame" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEntriesOfHallOfFame">
+      <soap:operation soapAction="http://tempuri.org/IMathPadServices/GetEntriesOfHallOfFame" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEntriesOfScoreBoard">
+      <soap:operation soapAction="http://tempuri.org/IMathPadServices/GetEntriesOfScoreBoard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTopScore">
+      <soap:operation soapAction="http://tempuri.org/IMathPadServices/GetTopScore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddScoreBoard">
+      <soap:operation soapAction="http://tempuri.org/IMathPadServices/AddScoreBoard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddHallofFame">
+      <soap:operation soapAction="http://tempuri.org/IMathPadServices/AddHallofFame" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MathPadServices">
+    <wsdl:port name="BasicHttpBinding_IMathPadServices" binding="tns:BasicHttpBinding_IMathPadServices">
+      <soap:address location="http://localhost:49362/MathPadServices.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

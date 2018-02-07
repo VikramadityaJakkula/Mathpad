@@ -1,0 +1,22 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_IMathPadServices" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+             <endpoint address="http://dev.quizmine.com:85/MathPadServices.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IMathPadServices"
+                contract="WCFMathPadSvc.IMathPadServices" name="BasicHttpBinding_IMathPadServices" />
+          <!--  
+           <endpoint address="http://localhost:49658/MathPadServices.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IMathPadServices"
+                contract="WCFMathPadSvc.IMathPadServices" name="BasicHttpBinding_IMathPadServices" />
+      -->          
+        </client>
+    </system.serviceModel>
+</configuration>
