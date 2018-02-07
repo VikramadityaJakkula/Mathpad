@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="SilverlightMathPad.Web.MathPadServices" CodeBehind="MathPadServices.svc.cs" %>

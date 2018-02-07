@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\SONY\MathPad_27022010_0" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="False" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True" useFpForLocalhost="0">
+    <file relUrl="Images/symbols.jpg" publishTime="06/17/2009 23:18:30" />
+    <file relUrl="Images/wrongImage.png" publishTime="06/22/2009 02:28:02" />
+    <file relUrl="Data/HallofFame.xml" publishTime="02/27/2010 17:27:18" />
+    <file relUrl="Images/correctImage.png" publishTime="06/22/2009 02:11:52" />
+    <file relUrl="ErrorLogger.txt" publishTime="02/27/2010 21:43:20" />
+    <file relUrl="MathPad.aspx" publishTime="02/27/2010 21:39:33" />
+    <file relUrl="ClientBin/SilverlightMathPad.xap" publishTime="02/27/2010 21:44:06" />
+    <file relUrl="Styles.css" publishTime="07/12/2009 03:11:16" />
+    <file relUrl="Images/teacher.jpg" publishTime="06/17/2009 23:22:56" />
+    <file relUrl="Images/QuizmineLogo.jpg" publishTime="06/03/2009 05:07:24" />
+    <file relUrl="Images/usaFlag.gif" publishTime="07/08/2009 22:06:36" />
+    <file relUrl="Images/ukFlag.jpg" publishTime="07/08/2009 22:06:08" />
+    <file relUrl="Images/my.gif" publishTime="07/08/2009 23:47:24" />
+    <file relUrl="Data/ScoreBoard.xml" publishTime="02/27/2010 17:27:19" />
+    <file relUrl="Images/kid.gif" publishTime="06/19/2009 12:48:30" />
+    <file relUrl="Images/home.gif" publishTime="07/08/2009 23:46:38" />
+    <file relUrl="Images/PerformanceReport.jpg" publishTime="07/12/2009 16:26:24" />
+    <file relUrl="bin/SilverlightMathPad.Web.pdb" publishTime="02/27/2010 21:43:58" />
+    <file relUrl="Images/indiaFlag.gif" publishTime="07/08/2009 22:07:00" />
+    <file relUrl="Silverlight.js" publishTime="02/14/2010 22:03:24" />
+    <file relUrl="Images/reportcard.gif" publishTime="06/19/2009 13:13:56" />
+    <file relUrl="Images/help.gif" publishTime="07/08/2009 23:45:58" />
+    <file relUrl="Images/HistoryReport.jpg" publishTime="07/12/2009 16:27:18" />
+    <file relUrl="clientaccesspolicy.xml" publishTime="02/27/2010 16:30:05" />
+    <file relUrl="Images/BenchmarkReport.jpg" publishTime="07/12/2009 16:28:10" />
+    <file relUrl="Images/number.gif" publishTime="07/12/2009 00:56:50" />
+    <file relUrl="bin/SilverlightMathPad.Web.dll" publishTime="02/27/2010 21:43:58" />
+    <file relUrl="MathPadServices.svc" publishTime="02/14/2010 22:21:02" />
+    <file relUrl="crossdomain.xml" publishTime="02/27/2010 16:30:05" />
+    <file relUrl="Web.config" publishTime="02/27/2010 21:48:35" />
+  </publishProfile>
+</publishData>
